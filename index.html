@@ -59,7 +59,7 @@
         )
 
         // const redirect_uri = `http://localhost:4200/#/silent-login?user=${cred.username}&pass=${cred.password}&uid=${cred.unique_id}`
-        const redirect_uri = `http://frontend-avaluos-dev.s3-website-us-east-1.amazonaws.com/silent-login?user=${cred.username}&pass=${cred.password}&uid=${cred.unique_id}`
+        const redirect_uri = `http://frontend-avaluos-dev.s3-website-us-east-1.amazonaws.com/silent-login?user=${cred.username}&pass=${cred.password}&uid=${cred.unique_id}&ip=${cred.ip}&userId=${cred.userId}&redirectUrl=${cred.redirectUrl}&application=${cred.application}`
 
         console.log('avaluo: ', unique_id)
 
