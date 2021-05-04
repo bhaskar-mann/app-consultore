@@ -33,8 +33,8 @@
         const unique_id = document.getElementById('avaluo').value
 
         const cred = {
-          username: 'deepanshu.da@gmail.com',
-          password: 'WfA6B2',
+          clientId: 'deepanshu.da@gmail.com',
+          secret: 'WfA6B2',
           unique_id: unique_id,
           ip: 'test',
           userId: 'test',
@@ -59,8 +59,9 @@
         )
 
         // const redirect_uri = `http://localhost:4200/#/silent-login?user=${cred.username}&pass=${cred.password}&uid=${cred.unique_id}`
-        const redirect_uri = `http://frontend-avaluos-dev.s3-website-us-east-1.amazonaws.com/silent-login?user=${cred.username}&pass=${cred.password}&uid=${cred.unique_id}&ip=${cred.ip}&userId=${cred.userId}&redirectUrl=${cred.redirectUrl}&application=${cred.application}`
-
+        // const redirect_uri = `http://frontend-avaluos-dev.s3-website-us-east-1.amazonaws.com/silent-login?user=${cred.username}&pass=${cred.password}&uid=${cred.unique_id}&ip=${cred.ip}&userId=${cred.userId}&redirectUrl=${cred.redirectUrl}&application=${cred.application}`
+        const redirect_uri = `http://frontend-avaluos-dev.s3-website-us-east-1.amazonaws.com/silent-login?clientid=${cred.clientId}&secret=${cred.secret}&uid=${cred.unique_id}&ip=${cred.ip}&userId=${cred.userId}&redirectUrl=${cred.redirectUrl}&application=${cred.application}`
+        
         console.log('avaluo: ', unique_id)
 
         console.log('raw json :', cred)
